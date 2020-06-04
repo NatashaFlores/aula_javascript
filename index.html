@@ -8,7 +8,18 @@
 
        
     </head>
-    <body>
-        
+    <body onload="load()">
+        <button type="button" onClick="clicou()">Clique aqui</button>
+        <p id="agradecimento" onClick="redirecionar()"></p>
+        <!--<p id="mousemove" onmouseover="trocar()" onmouseout="voltar()">Parece o mouse aqui</p>-->
+        <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Parece o mouse aqui</p>
+        <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">Parece o mouse aqui2</p>
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)">Parece o mouse aqui3</p>
+
+        <select onchange="funcaoChange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
     </body>
 </html>
